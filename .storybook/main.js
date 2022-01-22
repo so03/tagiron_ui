@@ -1,15 +1,3 @@
-## 環境構築
-
-### Storybookの導入
-
-#### Tailwindcssを使えるようにする
-```
-yarn add -D @storybook/addon-postcss
-```
-
-reference: https://medium.com/storybookjs/building-a-front-end-project-with-react-tailwindcss-and-storybook-742bdb1417da
-
-```.storybook/main.js
 const path = require('path')
 
 module.exports = {
@@ -42,8 +30,3 @@ module.exports = {
     return config
   }
 }
-```
-
-```.storybook/preview.js
-+ import '../src/index.css';
-```
