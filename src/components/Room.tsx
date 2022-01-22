@@ -4,8 +4,14 @@ import RoomMembersCurrentList from "./RoomMembersCurrentList";
 import RoomGameStartButton from "./RoomGameStartButton";
 import RoomMemberWait from "./RoomMemberWait";
 import RoomMemberForm from "./RoomMemberForm";
+import React from "react";
 
-export default function Room(props: any) {
+// https://zenn.dev/ogakuzuko/articles/react-typescript-for-beginner
+type Props = {
+  userInfo
+}
+
+export const Room: React.VFC = (props: any) => {
   const userInfo = props.userInfo;
   const members = props.members;
   const startGame = props.startGame;

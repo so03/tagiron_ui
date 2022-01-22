@@ -1,6 +1,8 @@
-## Storybookの導入
+## 環境構築
 
-### Tailwindcss
+### Storybookの導入
+
+#### Tailwindcssを使えるようにする
 ```
 yarn add -D @storybook/addon-postcss
 ```
