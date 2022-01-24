@@ -1,8 +1,12 @@
+import React from "react";
 import useForm from "../hooks/useForm";
 import BaseButton from "./BaseButton";
 
-export default function RoomMemberWait(props: any) {
-    const removeMember = props.removeMember;
+type Props = {
+    userInfoId: string
+}
+
+export const RoomMemberWait: React.VFC<Props> = (props) => {
     const { submit, isLoading } = useForm({ id: props.userInfoId });
     const handleRemove = async (e: any) => {
         await submit(e);
